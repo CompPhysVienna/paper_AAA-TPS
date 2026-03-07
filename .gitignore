@@ -1,3 +1,9 @@
+# Output subfolders
+2D_models/output/
+
+# Conda environment subfolders
+conda_envs/*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
