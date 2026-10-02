@@ -1,0 +1,46 @@
+name: aaa-tps
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - omnia
+
+dependencies:
+  - python=3.8
+
+  # Core numerics
+  - numpy=1.24
+  - scipy=1.10
+  - pandas=2.0
+  - h5py=3.11
+
+  # MD / sampling
+  - openmm=8.1
+  - openmmtools
+  - mdtraj=1.10
+  - mpiplus
+
+  # Order parameter
+  - numba=0.58
+  - networkx=3.1
+  - freud=3.0
+
+  # Torch with CUDA 12.1
+  - pytorch=2.4.1
+  - pytorch-cuda=12.1
+
+  # Notebooks and plotting
+  - matplotlib=3.7
+  - jupyterlab
+  - ipykernel
+  - tqdm
+  - seaborn
+
+  # Build tools for GRADE_updated
+  - make
+  - gxx_linux-64
+
+  - pip
+  - pip:
+      - MDAnalysis==2.4.3
+      - pymbar==4.0.3
