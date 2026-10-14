@@ -1,0 +1,8 @@
+# Standard double well: acceptance rate r_acc and relative effective sample size ESS/N (mean and standard error over replicas)
+# method            r_acc r_acc_err    ESS/N ESS/N_err
+2w_Gaus            0.2490    0.0002      nan       nan
+1w_Gaus            0.4040    0.0002      nan       nan
+ARA_TPS_Unif       0.9150    0.0001      nan       nan
+ARA_TPS_Gaus       0.8081    0.0002      nan       nan
+AAA_TPS_Unif          nan       nan   0.9091    0.0001
+AAA_TPS_Gaus          nan       nan   0.7200    0.0003
