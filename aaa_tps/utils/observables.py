@@ -42,7 +42,8 @@ def cumulative_weighted_average(values, weights=None):
 def get_weighted_autocorrelation_function(signal: np.ndarray,
                                           weights: np.ndarray = None,
                                           norm: bool = True,
-                                          mean: bool = True) -> np.ndarray:
+                                          mean: bool = True,
+                                          max_lag: int = None) -> np.ndarray:
     """
     Computes the weighted autocorrelation function of a signal.
 
@@ -61,6 +62,10 @@ def get_weighted_autocorrelation_function(signal: np.ndarray,
     mean : bool
         Whether to subtract the weighted mean from the signal.
         Default True.
+
+    max_lag : int
+        Number of lags to compute (lags 0, ..., max_lag-1).
+        Default None, i.e. all lags.
 
     Returns
     -------
@@ -94,11 +99,14 @@ def get_weighted_autocorrelation_function(signal: np.ndarray,
         # Center the signal by subtracting the weighted mean
         signal = signal - w_mean
 
+    # Number of lags to compute
+    n_lags = M if max_lag is None else min(max_lag, M)
+
     # Initialize the array that will hold the autocorrelation values
-    autocorrelation_function = np.zeros(M)
+    autocorrelation_function = np.zeros(n_lags)
 
     # Compute the weighted autocorrelation for each lag
-    for lag in range(M):
+    for lag in range(n_lags):
 
         # Compute combined weights for pairs separated by the current lag
         w = weights[:M - lag] * weights[lag:]
