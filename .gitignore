@@ -1,5 +1,7 @@
 # Output subfolders
 2D_models/output/
+2D_models/figures/
+2D_models/logs/
 
 # Conda environment subfolders
 conda_envs/*/
