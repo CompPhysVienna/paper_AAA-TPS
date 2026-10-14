@@ -1,5 +1,12 @@
-# An Always Accepting Algorithm for Transition Path Sampling (AAA-TPS)
-Companion repository for the paper "An Always Accepting Algorithm for Transition Path Sampling" aka "AAA-TPS"
+# An Always-Accepting Algorithm for Transition Path Sampling (AAA-TPS)
+Companion repository for the paper "An Always-Accepting Algorithm for Transition Path Sampling" aka "AAA-TPS"
+
+## Paper
+M. Häupl, S. Falkner, P. G. Bolhuis, C. Dellago, A. Coretti, "An Always-Accepting Algorithm for Transition Path Sampling"
+- Published version: J. Chem. Theory Comput., [doi:10.1021/acs.jctc.6c01159](https://doi.org/10.1021/acs.jctc.6c01159)
+- Preprint: [arXiv:2602.13130](https://arxiv.org/abs/2602.13130)
+
+The code in this repository was written by Magdalena Häupl, Sebastian Falkner and Alessandro Coretti.
 
 ## Installation
 The necessary software for the execution of the notebooks and the instruction for its installation can be found in the folder `conda_envs`. In particular see the header of the file `spec-file_aaa_tps.txt`.
