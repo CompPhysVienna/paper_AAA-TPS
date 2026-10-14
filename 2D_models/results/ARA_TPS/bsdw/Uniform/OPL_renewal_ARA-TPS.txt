@@ -1,0 +1,3 @@
+# Force evaluations needed for complete path renewal (overlap reaching zero)
+# mean std n_decayed n_censored n_no_data
+7114.72926 5047.133571 4999095 805 50
